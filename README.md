@@ -129,7 +129,7 @@ Example using GVL key for Windows 2025 Standard:
 slmgr /ipk TVRH6-WHNXV-R9WG3-9XRFY-MY832
 ```
 
-### FORCE ACTIVATION
+### FORCE ACTIVATION
 
 ```ruby
 slmgr /ato
