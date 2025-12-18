@@ -37,7 +37,7 @@ If you want to use OCI KMS you must [enable ‘OCI-Provided’ under licence typ
 
 IT doesn't matter wheter the instance was activated or not.
 
-open a PowerShell Prompt **with Admin Rights** and verify the upgraded Windows version using:
+open a PowerShell Prompt **with Admin Rights** and verify the Windows version & edition using:
 
 ```ruby
 Get-ComputerInfo -Property WindowsProductName
