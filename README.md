@@ -24,6 +24,24 @@ You will be then charged for the Windows license.
 [Download PDF Guide](./OCI_Windows_KMS_Activation_Guide.pdf)
 
 
+OCI Compute Instance - **License Type** Considerations:
+
+- **Bring Your Own License (BYOL)**
+The instance can establish connectivity to OCI KMS, however, it is not authorized to use KMS functionalities.
+
+- **OCI-Provided License**
+The instance can both connect to and fully use OCI Key KMS.
+
+Important:
+To be authorized to use OCI KMS, the instance must be created from an image whose Operating System field is set to Windows. Images with "Linux" or "Custom" as the operating system will not be authorized to connect to the OCI KMS.
+
+If the **Operating System** field of your custom image is not set to **Windows**, you can update it from the CloudShell using:
+
+```ruby
+oci compute image update --image-id ocid1.image.oc1.region_identifier.xxxxxxxxxx --operating-system "Windows" --operating-system-version "server 2025 standard"
+```
+
+
 # Migration Steps:
 
 
