@@ -5,12 +5,18 @@ This guide explains how to activate a Windows instance created on an imported cu
 # Overview
 
 If you've imported a custom Windows image into OCI and wish to use an OCI-provided Windows license instead of your existing one, follow this guide.
-This process applies to the following scenarios:
-- Windows has **not yet been activated** (no license key provided).- Windows is **already activated** (a license key is present).
+
+This process applies to the following scenarios:
+
+- Windows has **not yet been activated** (no license key provided).
+- Windows is **already activated** (a license key is present).
 
 To transition to an OCI-provided Windows license, we will:
-1. **Reset the activation state** and **remove the existing product key** from the system.2. **Register the instance with OCI’KMS** to obtain and activate an **OCI-managed Windows license.**
-By completing these steps, your instance will be licensed under OCI's Windows licensing framework. 
+
+1. **Reset the activation state** and **remove the existing product key** from the system.
+2. **Register the instance with OCI’KMS** to obtain and activate an **OCI-managed Windows license.**
+
+By completing these steps, your instance will be licensed under OCI's Windows licensing framework. 
 
 You will be then charged for the Windows license.
 
@@ -35,7 +41,7 @@ open a PowerShell Prompt **with Admin Rights** and verify the upgraded Windows v
 
 ```ruby
 Get-ComputerInfo -Property WindowsProductName
-slmgr /dvl
+slmgr /dlv
 ```
 
 ### REMOVE THE EXISTING PRODUCT KEY
