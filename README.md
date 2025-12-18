@@ -57,18 +57,6 @@ slmgr /upk
 slmgr /cpky 
 ```
 
-### RESTART THE INSTANCE
-
-```ruby
-shutdown /r /t 0
-```
-
-### REGISTER THE OCI KMS SERVER
-
-```ruby
-slmgr /skms 169.254.169.253:1688
-```
-
 ### RESET ACTIVATION STATE
 
 ```ruby
@@ -79,6 +67,12 @@ slmgr /rearm
 
 ```ruby
 shutdown /r /t 0
+```
+
+### REGISTER THE OCI KMS SERVER
+
+```ruby
+slmgr /skms 169.254.169.253:1688
 ```
 
 ### RETRIEVE THE PROPER GENERIC VOLUME LICENSE KEY
