@@ -1,10 +1,10 @@
-# OCI Windows KMS Activation Guide
+# Switch from a Bring Your Own License model to an OCI-Provided License
 
-This guide explains how to activate a Windows instance created on an imported custom image using OCI KMS.
+If you have imported a custom Windows image into OCI and want to use an OCI-provided Windows license instead of your existing license, follow this guide.
 
-# Overview
+This guide also applies if you created a Windows instance using a BYOL image from the OCI Marketplace and now want to transition to an OCI-provided license model.
 
-If you've imported a custom Windows image into OCI and wish to use an OCI-provided Windows license instead of your existing one, follow this guide.
+**If you want to switch from an OCI-Provided License to a Bring Your Own License**, [follow this guide](./OCI-Provided-License_to_BYOL.md)
 
 This process applies to the following scenarios:
 
