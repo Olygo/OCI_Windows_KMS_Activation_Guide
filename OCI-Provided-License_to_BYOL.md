@@ -1,4 +1,4 @@
-# Switch from OCI-Provided License to Bring Your Own License
+# Switch from an OCI License model to a BYOL model
 
 This guide explains how to reconfigure a Windows instance from an **OCI-provided license** model to a **Bring Your Own License** model.
 
@@ -20,7 +20,7 @@ As a result, Windows license charges will no longer apply.
 
 ### UPDATE LICENSE TYPE
 
-If you want to use your own Activation Key you must [enable ‘Bring Your Own License’ under licence type](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/changewinlicense.htm#changing_the_windows_license) for each instance. 
+You must first [enable ‘Bring Your Own License’ under licence type](https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/changewinlicense.htm#changing_the_windows_license) for each instance. 
 
 **Instance will automatically restart to apply this change.**
 
@@ -57,7 +57,7 @@ slmgr /rearm
 shutdown /r /t 0
 ```
 
-### REGISTER THE OCI KMS SERVER
+### REGISTER YOUR KMS SERVER
 
 **This step is not required if you don't have a KMS server and are using a MAK key.**
 
